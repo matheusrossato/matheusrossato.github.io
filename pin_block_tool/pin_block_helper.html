@@ -98,7 +98,7 @@ function undoXOR() {
     var pinBlock = document.getElementById("input_pinBlock").value;
     var pin = "";
     var inputed_cardID = document.getElementById("cardID").value.toString();
-    alert("pinBlock= " + pinBlock + " inputed_cardID= " + inputed_cardID);
+    //alert("pinBlock= " + pinBlock + " inputed_cardID= " + inputed_cardID);
     var i = 0;
     if (inputed_cardID != null){
         decimalizeCardID();
@@ -107,7 +107,7 @@ function undoXOR() {
     do {
         xorChar = decimalized_cardID.charAt(i) ^ pinBlock.charAt(i);
         //alert("xorChar =" + xorChar + "charCardID = " + xor_decimalized_cardID.toString().charAt(i) + "charPin" + pinForXOR.toString().charAt(i));
-        alert(xorChar);
+        //alert(xorChar);
         switch(xorChar.toString()) {
               case "10":
                   xorChar = 'A';
@@ -146,7 +146,7 @@ function undoXOR() {
   else{
       alert("can't XOR CardID and PIN Block");
   }
-  alert(pin);
+  //alert(pin);
   document.getElementById("pin").value = pin.slice(2,6);
 }
 </script>
