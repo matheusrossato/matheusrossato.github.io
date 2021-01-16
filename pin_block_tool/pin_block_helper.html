@@ -79,7 +79,7 @@ function doXOR() {
   //alert(xor_decimalized_cardID.length + " " + pinForXOR.length );
   if (xor_decimalized_cardID.length == 16 && pinForXOR.length ==16){
     do {
-        xorChar = xor_decimalized_cardID.toString().charAt(i) ^ pinForXOR.toString().charAt(i);
+        xorChar = xor_decimalized_cardID.charAt(i) ^ pinForXOR.charAt(i);
         //alert("xorChar =" + xorChar + "charCardID = " + xor_decimalized_cardID.toString().charAt(i) + "charPin" + pinForXOR.toString().charAt(i));
         pinBlock += xorChar;
         //alert("i= "+ i );
